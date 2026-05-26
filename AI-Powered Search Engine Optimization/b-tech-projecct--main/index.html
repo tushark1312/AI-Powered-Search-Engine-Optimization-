@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Enhanced Business Search Engine</title>
+     <!-- Fontawesome CDN Link -->
+     
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+    
+</head>
+<body>
+    <div class="mainheading">Find the top notch solution for your business</div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">AI Business</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <!-- Dropdown menu for Offerings -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="offeringsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Offerings </a>
+                <ul class="dropdown-menu dropdown-menu-end animate__animated animate__fadeInDown" aria-labelledby="offeringsDropdown">
+                  <li><a class="dropdown-item" href="#">Business Planning & Expansion</a></li>
+                  <li><a class="dropdown-item" href="expertConsultation.html">Expert Consultations</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <div class="search-container my-5">
+        <div class="container">
+            <form id="searchForm" onsubmit="event.preventDefault(); performSearch();">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="location" class="form-label">Location</label>
+                        <select id="location" class="form-select">
+                            <option value="">Choose City...</option>
+                            <option value="Pune">Pune</option>
+                            <option value="Nashik">Nashik</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Nagpur">Nagpur</option>
+                            <option value="Mumbai">Mumbai</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label for="sector" class="form-label">Sector</label>
+                        <select id="sector" class="form-select">
+                            <option value="">Choose Sector...</option>
+                            <option value="food">Food</option>
+                            <option value="retail">Retail</option>
+                            <option value="tech">Tech</option>
+                            <option value="finance">Finance</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="stage" class="form-label">Business Stage</label>
+                        <select id="stage" class="form-select">
+                            <option value="">Choose Stage...</option>
+                            <option value="start">Start</option>
+                            <option value="grow">Grow</option>
+                            <option value="manage">Manage</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label for="category" class="form-label">Category</label>
+                        <select id="category" class="form-select">
+                            <option value="">Choose Category...</option>
+                            <option value="marketing">Marketing</option>
+                            <option value="consultation">Consultation</option>
+                            <option value="finance">Finance</option>
+                            <option value="operations">Operations</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">Search</button>
+            </form>
+        </div>
+    </div>
+    <div class="carousel">
+        <div class="ourservices">Popular Services</div>
+        <div class="list">
+            <div class="item">
+                <img src="images/Advertising&Promo.png">
+                <div class="introduce">
+                    <div class="title">
+                    </div>
+                    <div class="topic">Advertising and Promotion</div>
+                    <div class="des">
+                        <!-- 20 lorem -->
+                        Developing and executing advertising campaigns across various mediums, including print, TV, radio, outdoor and digital platforms involving media planning, budgeting, creative development & performance tracking.
+                    </div>
+                    <button class="seeMore">SEE MORE &#8599</button>
+                </div>
+                <div class="detail">
+                    <div class="title">SHOP ACT INTIMATION</div>
+                    <div class="des">
+                        <!-- lorem 50 -->
+                        Shop Act Intimation is a mandatory Labor Law compliance for all businesses located within municipal limits of Maharashtra. It is a legal compliance requirement for businesses in Maharashtra.
+                    </div>
+                    <div class="specifications">
+                        <div>
+                            <p>Profile Settings</p>
+                            <p>No Details</p>
+                        </div>
+                        <div>
+                            <p>Service Availed </p>
+                            <p>0</p>
+                        </div>
+                        <div>
+                            <p>Documents Uploaded</p>
+                            <p>0</p>
+                        </div>
+                        <div>
+                            <p>Appointments</p>
+                            <p>No Appointments Schedule</p>
+                        </div>
+                    </div>
+                    <div class="checkout">
+                        <button>₹ 1000</button>
+                        <button>CHECKOUT</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/ContentCreation.png">
+                <div class="introduce">
+                    <div class="title"></div>
+                    <div class="topic">Content Creation
+                    </div>
+                    <div class="des">
+                        <!-- 20 lorem -->
+                        Generating high-quality content such as blog posts, articles, videos, infographics & social media posts that engage & resonate with the target audience with storytelling, copywriting and content optimization.
+                    </div>
+                    <button class="seeMore">SEE MORE &#8599</button>
+                </div>
+                <div class="detail">
+                    <div class="title">SHOP ACT INTIMATION</div>
+                    <div class="des">
+                        <!-- lorem 50 -->
+                        Shop Act Intimation is a mandatory Labor Law compliance for all businesses located within municipal limits of Maharashtra. It is a legal compliance requirement for businesses in Maharashtra.
+                    </div>
+                    <div class="specifications">
+                        <div>
+                            <p>Profile Settings</p>
+                            <p>No Details</p>
+                        </div>
+                        <div>
+                            <p>Service Availed </p>
+                            <p>0</p>
+                        </div>
+                        <div>
+                            <p>Documents Uploaded</p>
+                            <p>0</p>
+                        </div>
+                        <div>
+                            <p>Appointments</p>
+                            <p>No Appointments Schedule</p>
+                        </div>
+                    </div>
+                    <div class="checkout">
+                        <button>₹ 1000</button>
+                        <button>CHECKOUT</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/PublicRelation.png">
+                <div class="introduce">
+                    <div class="title"></div>
+                    <div class="topic">Public Relations
+                    </div>
+                    <div class="des">
+                        <!-- 20 lorem -->
+                        Managing public relations efforts by cultivating relationships with media outlets, writing press releases, organizing events & handling crisis communication. Building & maintaining a positive brand image with the reputation of the business.
+                    </div>
+                    <button class="seeMore">SEE MORE &#8599</button>
+                </div>
+                <div class="detail">
+                    <div class="title">SHOP ACT INTIMATION</div>
+                    <div class="des">
+                        <!-- lorem 50 -->
+                        Shop Act Intimation is a mandatory Labor Law compliance for all businesses located within municipal limits of Maharashtra. It is a legal compliance requirement for businesses in Maharashtra.
+                    </div>
+                    <div class="specifications">
+                        <div>
+                            <p>Profile Settings</p>
+                            <p>No Details</p>
+                        </div>
+                        <div>
+                            <p>Service Availed </p>
+                            <p>0</p>
+                        </div>
+                        <div>
+                            <p>Documents Uploaded</p>
+                            <p>0</p>
+                        </div>
+                        <div>
+                            <p>Appointments</p>
+                            <p>No Appointments Schedule</p>
+                        </div>
+                    </div>
+                    <div class="checkout">
+                        <button>₹ 1000</button>
+                        <button>CHECKOUT</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/MarketResearch.png">
+                <div class="introduce">
+                    <div class="title"></div>
+                    <div class="topic">Market Research
+                    </div>
+                    <div class="des">
+                        <!-- 20 lorem -->
+                        Conducting market research to understand customer preferences, industry trends & competitive landscape. Gathering data through surveys, interviews, focus groups to inform marketing strategies & decision-making
+                    </div>
+                    <button class="seeMore">SEE MORE &#8599</button>
+                </div>
+                <div class="detail">
+                    <div class="title">SHOP ACT INTIMATION</div>
+                    <div class="des">
+                        <!-- lorem 50 -->
+                        Shop Act Intimation is a mandatory Labor Law compliance for all businesses located within municipal limits of Maharashtra. It is a legal compliance requirement for businesses in Maharashtra.
+                    </div>
+                    <div class="specifications">
+                        <div>
+                            <p>Profile Settings</p>
+                            <p>No Details</p>
+                        </div>
+                        <div>
+                            <p>Service Availed </p>
+                            <p>0</p>
+                        </div>
+                        <div>
+                            <p>Documents Uploaded</p>
+                            <p>0</p>
+                        </div>
+                        <div>
+                            <p>Appointments</p>
+                            <p>No Appointments Schedule</p>
+                        </div>
+                    </div>
+                    <div class="checkout">
+                        <button>₹ 1000</button>
+                        <button>CHECKOUT</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/Branding.png">
+                <div class="introduce">
+                    <div class="title"></div>
+                    <div class="topic">Branding
+                    </div>
+                    <div class="des">
+                        <!-- 20 lorem -->
+                        Creating & enhancing brand identity by developing brand guidelines, logos, taglines and other visual, verbal elements. Ensuring consistent brand messaging across all marketing channels.
+                    </div>
+                    <button class="seeMore">SEE MORE &#8599</button>
+                </div>
+                <div class="detail">
+                    <div class="title">SHOP ACT INTIMATION</div>
+                    <div class="des">
+                        <!-- lorem 50 -->
+                        Shop Act Intimation is a mandatory Labor Law compliance for all businesses located within municipal limits of Maharashtra. It is a legal compliance requirement for businesses in Maharashtra.
+                    </div>
+                    <div class="specifications">
+                        <div>
+                            <p>Profile Settings</p>
+                            <p>No Details</p>
+                        </div>
+                        <div>
+                            <p>Service Availed </p>
+                            <p>0</p>
+                        </div>
+                        <div>
+                            <p>Documents Uploaded</p>
+                            <p>0</p>
+                        </div>
+                        <div>
+                            <p>Appointments</p>
+                            <p>No Appointments Schedule</p>
+                        </div>
+                    </div>
+                    <div class="checkout">
+                        <button>₹ 1000</button>
+                        <button>CHECKOUT</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/DigitalMarketing.png">
+                <div class="introduce">
+                    <div class="title"></div>
+                    <div class="topic">Digital Marketing
+                    </div>
+                    <div class="des">
+                        <!-- 20 lorem -->
+                        Implementing online marketing campaigns such as search engine optimization (SEO), pay-per-click (PPC) advertising, email marketing, content marketing & influencer marketing
+                    </div>
+                    <button class="seeMore">SEE MORE &#8599</button>
+                </div>
+                <div class="detail">
+                    <div class="title">SHOP ACT INTIMATION</div>
+                    <div class="des">
+                        <!-- lorem 50 -->
+                        Shop Act Intimation is a mandatory Labor Law compliance for all businesses located within municipal limits of Maharashtra. It is a legal compliance requirement for businesses in Maharashtra.
+                    </div>
+                    <div class="specifications">
+                        <div>
+                            <p>Profile Settings</p>
+                            <p>No Details</p>
+                        </div>
+                        <div>
+                            <p>Service Availed </p>
+                            <p>0</p>
+                        </div>
+                        <div>
+                            <p>Documents Uploaded</p>
+                            <p>0</p>
+                        </div>
+                        <div>
+                            <p>Appointments</p>
+                            <p>No Appointments Schedule</p>
+                        </div>
+                    </div>
+                    <div class="checkout">
+                        <button>₹ 1000</button>
+                        <button>CHECKOUT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+            <button id="back">See All  &#8599</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+  
+    <footer class="footer">
+        <div class="fcontainer">
+          <div class="row">
+            <div class="footer-col">
+              <h4>company</h4>
+              <ul>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">our services</a></li>
+                <li><a href="#">privacy policy</a></li>
+                <li><a href="#">affiliate program</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Resources</h4>
+              <ul>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Developer APIs</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Legal</h4>
+              <ul>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms of Services</a></li>
+                <li><a href="#">shoes</a></li>
+                <li><a href="#">Security</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Stay Connected</h4>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+      
+    
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
